@@ -1,0 +1,46 @@
+--- layout: default title: ---
+ERC RESEARCH PROJECT Â· RADBOUD UNIVERSITY
+Understanding cognition through large-scale brain interactions.
+NONLIN investigates how distributed brain areas interact in complex, non-linear and nonseparable ways to give rise to cognitive processes.
+Explore the research â†’ About NONLIN
+
+ABOUT NONLIN
+How do distributed brain areas interact to give rise to cognition?
+The project develops new ways to measure and understand interactions across distributed brain areas, with particular emphasis on dynamics that cannot be adequately described as linear or separated into independent components.
+Discover the research â†’
+OUR RESEARCH
+âŒ˜
+Large-scale interactions
+Characterising coordinated activity and communication between distributed brain areas.
+âˆ¿
+Non-linear dynamics
+Understanding how non-linear processes shape neural activity and cognitive computation.
+âˆž
+Nonseparable processes
+Investigating cognitive operations that cannot be decomposed into independent components.
+MEET THE TEAM
+View the full team â†’
+{% assign members = site.people | sort: 'order' %} {% for person in members limit:4 %}
+{{ person.initials }}
+{{ person.name }}
+{{ person.role }}
+{{ person.summary }}
+{% endfor %}
+LATEST PUBLICATIONS
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% for pub in pubs limit:3 %}
+{{ pub.date | date: "%Y" }}
+{{ pub.title }}
+{{ pub.authors }}
+{{ pub.journal }}
+{% if pub.doi %}DOI â†—{% endif %}
+{% endfor %}
+View all publications â†’
+LATEST NEWS
+{% assign newsitems = site.news | sort: 'date' | reverse %}
+{% for item in newsitems limit:3 %}
+
+{{ item.category }} Â· {{ item.date | date: "%d %b %Y" }}
+{{ item.title }}
+{% endfor %}
+All news â†’

@@ -1,0 +1,29 @@
+title: NONLIN
+description: "Large-scale interactions mediating cognitive processes: Non-linear and nonseparable"
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+collections:
+  publications:
+    output: false
+  news:
+    output: true
+    permalink: /news/:name/
+  people:
+    output: false
+  collaborators:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news_item
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="eyebrow">EUROPEAN RESEARCH COUNCIL</div>
+      <p>NONLIN is an ERC-funded research project at Radboud University.</p>
+      <p class="small">Funding acknowledgement and official grant details can be added here once confirmed.</p>
+    </div>
+    <div>
+      <div class="eyebrow">PRINCIPAL INVESTIGATOR</div>
+      <p><strong>Prof. Martin Vinck</strong><br>Radboud University</p>
+    </div>
+    <div>
+      <div class="eyebrow">PROJECT</div>
+      <p><strong>NONLIN</strong><br>Large-scale interactions mediating cognitive processes: Non-linear and nonseparable</p>
+    </div>
+  </div>
+</footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+  }
+</script>

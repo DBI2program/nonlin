@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract NONLIN interaction graphic</title>
+  <desc id="desc">Blue and orange interaction lines passing through a stylised network representing distributed brain interactions.</desc>
+  <defs>
+    <linearGradient id="fadeBlue" x1="0" x2="1"><stop stop-color="#0f65e8" stop-opacity="0"/><stop offset=".4" stop-color="#0f65e8" stop-opacity=".72"/><stop offset="1" stop-color="#0f65e8" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="fadeOrange" x1="0" x2="1"><stop stop-color="#f07a27" stop-opacity=".1"/><stop offset=".62" stop-color="#f07a27" stop-opacity=".78"/><stop offset="1" stop-color="#f07a27" stop-opacity="0"/></linearGradient>
+    <radialGradient id="brainGlow"><stop stop-color="#f7f9fc"/><stop offset="1" stop-color="#e9eef6" stop-opacity=".25"/></radialGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <g stroke="url(#fadeBlue)" stroke-width="2">
+      <path d="M-10 170 C155 40 230 345 430 214 S675 80 875 155"/>
+      <path d="M-10 205 C170 72 235 385 430 230 S680 112 875 190"/>
+      <path d="M-10 240 C150 115 250 400 430 250 S670 145 875 225"/>
+      <path d="M-10 275 C140 160 255 405 430 272 S650 178 875 260"/>
+      <path d="M-10 310 C155 200 250 410 430 292 S680 210 875 300"/>
+      <path d="M-10 345 C150 240 255 430 430 316 S665 245 875 340"/>
+    </g>
+    <g stroke="url(#fadeOrange)" stroke-width="2">
+      <path d="M-10 190 C190 335 300 70 468 204 S700 365 875 205"/>
+      <path d="M-10 225 C190 365 300 100 468 225 S700 390 875 235"/>
+      <path d="M-10 260 C190 395 300 130 468 248 S700 410 875 270"/>
+      <path d="M-10 295 C190 420 300 165 468 274 S700 425 875 310"/>
+      <path d="M-10 330 C190 440 300 205 468 300 S700 438 875 350"/>
+    </g>
+  </g>
+  <g transform="translate(470 90)">
+    <path d="M136 31c-47-22-102-5-126 38-25 1-50 13-66 35-18 25-20 56-8 82-18 27-18 64 2 91 17 23 44 36 72 34 16 39 58 64 101 58 31 26 78 30 113 6 39-26 54-76 39-120 20-29 21-68 2-98-14-23-37-39-64-44-7-35-30-66-65-82z" fill="url(#brainGlow)" stroke="#b9c5d6" stroke-width="2"/>
+    <g fill="none" stroke="#c4cedb" stroke-width="1.5" opacity=".78">
+      <path d="M16 94c45-40 104-37 144 4 30 31 73 37 112 17"/>
+      <path d="M-1 139c51-31 109-21 145 20 31 35 76 45 115 31"/>
+      <path d="M-8 188c49-22 95-13 134 20 43 36 88 46 132 27"/>
+      <path d="M12 238c43-14 86-2 116 25 42 38 85 45 119 27"/>
+      <path d="M54 62c15 32 46 45 77 35 37-12 72 4 86 35"/>
+      <path d="M77 323c14-33 45-48 77-36 36 13 70 0 91-31"/>
+    </g>
+    <g fill="#fff" stroke="#8094af" stroke-width="2">
+      <circle cx="38" cy="116" r="5"/><circle cx="84" cy="88" r="5"/><circle cx="130" cy="145" r="5"/><circle cx="178" cy="111" r="5"/><circle cx="219" cy="158" r="5"/><circle cx="69" cy="205" r="5"/><circle cx="118" cy="243" r="5"/><circle cx="171" cy="206" r="5"/><circle cx="222" cy="253" r="5"/><circle cx="156" cy="300" r="5"/>
+    </g>
+  </g>
+</svg>
