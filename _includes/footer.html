@@ -1,28 +1,28 @@
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="eyebrow">EUROPEAN RESEARCH COUNCIL</div>
-      <p>NONLIN is an ERC-funded research project at Radboud University.</p>
-      <p class="small">Funding acknowledgement and official grant details can be added here once confirmed.</p>
+  <div class="container">
+    <div class="footer-simple">
+
+      <div class="footer-info">
+        <strong>NONLIN</strong>
+        <p>An ERC-funded research project hosted by Radboud University.</p>
+      </div>
+
+      <div class="footer-logos">
+        <img src="{{ '/assets/images/erc-eu-logo.png' | relative_url }}"
+             alt="European Research Council and European Union">
+
+        <img src="{{ '/assets/images/radboud-logo.png' | relative_url }}"
+             alt="Radboud University">
+      </div>
+
     </div>
-    <div>
-      <div class="eyebrow">PRINCIPAL INVESTIGATOR</div>
-      <p><strong>Prof. Martin Vinck</strong><br>Radboud University</p>
-    </div>
-    <div>
-      <div class="eyebrow">PROJECT</div>
-      <p><strong>NONLIN</strong><br>Large-scale interactions mediating cognitive processes: Non-linear and nonseparable</p>
-    </div>
+
+    <p class="footer-disclaimer">
+      Funded by the European Union. Views and opinions expressed are
+      however those of the author(s) only and do not necessarily reflect
+      those of the European Union or the European Research Council
+      Executive Agency. Neither the European Union nor the granting
+      authority can be held responsible for them.
+    </p>
   </div>
 </footer>
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.site-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      nav.classList.toggle('open');
-    });
-  }
-</script>
