@@ -1,7 +1,7 @@
 title: NONLIN
 description: "Large-scale interactions mediating cognitive processes: Non-linear and nonseparable"
-url: ""
-baseurl: ""
+url: "https://dbi2program.github.io/nonlin/"
+baseurl: "/nonlin"
 markdown: kramdown
 permalink: pretty
 
