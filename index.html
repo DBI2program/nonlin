@@ -1,0 +1,84 @@
+---
+layout: default
+title:
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">ERC RESEARCH PROJECT · RADBOUD UNIVERSITY</div>
+      <h1>Understanding cognition through large-scale brain interactions.</h1>
+      <p class="lead">NONLIN investigates how distributed brain areas interact in complex, non-linear and nonseparable ways to give rise to cognitive processes.</p>
+      <div class="button-row">
+        <a class="button primary" href="{{ '/research/' | relative_url }}">Explore the research <span>→</span></a>
+        <a class="button secondary" href="#about">About NONLIN</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="{{ '/assets/images/nonlin-flow.svg' | relative_url }}" alt="Abstract blue and orange interaction flows through a stylised brain network">
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="about">
+  <div class="container split">
+    <div>
+      <div class="eyebrow accent-rule">ABOUT NONLIN</div>
+      <h2>How do distributed brain areas interact to give rise to cognition?</h2>
+    </div>
+    <div>
+      <p class="large-copy">The project develops new ways to measure and understand interactions across distributed brain areas, with particular emphasis on dynamics that cannot be adequately described as linear or separated into independent components.</p>
+      <a class="text-link" href="{{ '/research/' | relative_url }}">Discover the research <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow accent-rule">OUR RESEARCH</div>
+    <div class="research-grid">
+      <article class="research-card"><div class="icon network">⌘</div><div><h3>Large-scale interactions</h3><p>Characterising coordinated activity and communication between distributed brain areas.</p></div></article>
+      <article class="research-card"><div class="icon wave">∿</div><div><h3>Non-linear dynamics</h3><p>Understanding how non-linear processes shape neural activity and cognitive computation.</p></div></article>
+      <article class="research-card"><div class="icon loop">∞</div><div><h3>Nonseparable processes</h3><p>Investigating cognitive operations that cannot be decomposed into independent components.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow accent-rule">MEET THE TEAM</div><a class="text-link" href="{{ '/team/' | relative_url }}">View the full team →</a></div>
+    <div class="team-grid">
+      {% assign members = site.people | sort: 'order' %}
+      {% for person in members limit:4 %}
+      <article class="person-card">
+        <div class="portrait-placeholder">{{ person.initials }}</div>
+        <div><h3>{{ person.name }}</h3><div class="role">{{ person.role }}</div><p>{{ person.summary }}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container dual-grid">
+    <div>
+      <div class="section-head"><div class="eyebrow accent-rule">LATEST PUBLICATIONS</div></div>
+      {% assign pubs = site.publications | sort: 'date' | reverse %}
+      <div class="publication-list">
+      {% for pub in pubs limit:3 %}
+        <article class="publication-item"><div class="pub-year">{{ pub.date | date: "%Y" }}</div><div><h3>{{ pub.title }}</h3><p>{{ pub.authors }}</p><p class="journal">{{ pub.journal }}</p>{% if pub.doi %}<a class="text-link small-link" href="https://doi.org/{{ pub.doi }}">DOI ↗</a>{% endif %}</div></article>
+      {% endfor %}
+      </div>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">View all publications →</a>
+    </div>
+    <div>
+      <div class="section-head"><div class="eyebrow accent-rule">LATEST NEWS</div></div>
+      {% assign newsitems = site.news | sort: 'date' | reverse %}
+      <div class="news-list">
+      {% for item in newsitems limit:3 %}
+        <article class="news-row"><div class="news-thumb"></div><div><div class="news-meta"><span>{{ item.category }}</span> · {{ item.date | date: "%d %b %Y" }}</div><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3></div></article>
+      {% endfor %}
+      </div>
+      <a class="text-link" href="{{ '/news/' | relative_url }}">All news →</a>
+    </div>
+  </div>
+</section>
